@@ -23,5 +23,6 @@
     "url": "https://github.com/JustinJnkns/note-taker/issues"
   },
   "homepage": "https://github.com/JustinJnkns/note-taker#readme",
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {}
 }
