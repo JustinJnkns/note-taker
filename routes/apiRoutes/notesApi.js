@@ -1,19 +1,16 @@
 const router = require('express').Router()
 const fs = require('fs')
-const { notes } = require("../../db/db.json")
-const { validation, noteCreation } = require('../../lib/notes')
-
+const {validation,noteCreation} = require('../../lib/notes')
+const {notes} = require('../../db/db.json')
 router.get("/notes", (req, res) => {
-    fs.readFile("./db/db.json", "utf8", function(err, contents) {
-        var results = JSON.parse(contents);
-        res.send(results);
+        res.json(notes)
     });
-});
+
 
 
 router.post('/notes', (req, res) => {
-    console.log(req.body)
-    res.json(req.body)
+    const newNote = noteCreation(req.body,notes)
+    res.json(newNote)
 
 })
 

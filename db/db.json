@@ -1,12 +1,20 @@
 {
-  "notes":[
+  "notes": [
     {
-    "title": "Test Title",
-    "text": "Test text"
-  },
-  {
-    "title": "fake",
-    "text": "test"
-  }
-]
+      "title": "Test Title",
+      "text": "Test text"
+    },
+    {
+      "title": "fake",
+      "text": "test"
+    },
+    {
+      "title": "HI",
+      "text": "Push"
+    },
+    {
+      "title": "Anotha 1",
+      "text": "This here works!"
+    }
+  ]
 }
